@@ -1,0 +1,33 @@
+name: Update appcast
+
+# Fires when a release is published — immediately for non-draft releases,
+# or when you click "Publish release" on a draft.
+# Downloads appcast.xml from the release assets (uploaded by build-production.sh)
+# and commits it so GitHub Pages serves the updated feed.
+on:
+  release:
+    types: [published]
+
+jobs:
+  update-appcast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download appcast from release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download "${{ github.event.release.tag_name }}" \
+            --pattern "appcast.xml" \
+            --output appcast.xml \
+            --clobber
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add appcast.xml
+          git diff --staged --quiet && echo "No changes to appcast" && exit 0
+          git commit -m "chore: update appcast for ${{ github.event.release.tag_name }}"
+          git push
