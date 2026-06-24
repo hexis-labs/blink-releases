@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatriculata.com/xml/rss/2.0/">
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Blink</title>
-        <item/>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Wed, 24 Jun 2026 12:35:38 +0530</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/hexis-labs/blink-releases/releases/download/v1.0.0/Blink-1.0.0.dmg" length="18059653" type="application/octet-stream" sparkle:edSignature="A0XjTZovKrZU3n9/nLF1ox4e2Vq0LhuEnJ5FMGFRYYl6lQ8MAQXvORaWdaOdRg4fOejiJW/vradGwAE7cLqwBg=="/>
+        </item>
     </channel>
 </rss>
