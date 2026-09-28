@@ -3,14 +3,14 @@
     <channel>
         <title>Blink</title>
         <item>
-            <title>1.0.10</title>
-            <pubDate>Thu, 27 Aug 2026 02:22:52 +0530</pubDate>
+            <title>1.0.11</title>
+            <pubDate>Mon, 28 Sep 2026 16:40:13 +0530</pubDate>
             <sparkle:minimumAutoupdateVersion>13</sparkle:minimumAutoupdateVersion>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/hexis-labs/blink-releases/releases/download/v1.0.10/Blink-1.0.10.dmg" length="29731544" type="application/octet-stream" sparkle:edSignature="So3tbi6pIBDw2kpJwl1I/lzModtGThupOFzCRne7D16wbxHfOMvNWZg02ovz8sTv619Ef+ddyekBxKUXmBeuCQ=="/>
+            <enclosure url="https://github.com/hexis-labs/blink-releases/releases/download/v1.0.11/Blink-1.0.11.dmg" length="29727127" type="application/octet-stream" sparkle:edSignature="1VoGvjm6wgOyBMRZfuYz4SgL048xP1Fz9w3T2Dn1ivTpPxo8FUJ50vnA7f6b7K2KIPZ4UIi/7F0XdIw1iOGSAw=="/>
         </item>
     </channel>
 </rss>
